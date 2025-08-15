@@ -15,7 +15,8 @@
   </style>
 </head>
 <body>
-  <header>
+  
+    <header>
     <div class="container nav">
       <a href="#home" class="brand">
         <span class="logo" aria-hidden="true"></span>
@@ -26,7 +27,23 @@
           <li><a href="#home" class="active">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <!-- Link que abre modal -->
-          <li><a href="#projeto" id="projetoBtn">O Projeto ▾</a></li>
+          <li class="dropdown">
+            <a href="#projeto" id="projetoBtn">O Projeto ▾</a>
+            <ul class="dropdown-content">
+              <li><a href="#dados-pais">Dados sobre o país</a></li>
+              <li><a href="#coordenadas">Coordenadas geográficas</a></li>
+              <li><a href="#simbolos">Símbolos nacionais</a></li>
+              <li><a href="#provincias">Províncias</a></li>
+              <li><a href="#mapa">Mapa</a></li>
+              <li><a href="#clima">Clima</a></li>
+              <li><a href="#flora">Flora</a></li>
+              <li><a href="#fauna">Fauna</a></li>
+              <li><a href="#rios">Rios</a></li>
+              <li><a href="#recursos">Recursos minerais</a></li>
+              <li><a href="#turismo">Turismo</a></li>
+              <li><a href="#desenvolvimento">Desenvolvimento regional</a></li>
+            </ul>
+          </li>
           <li><a href="#contactos">Contactos</a></li>
         </ul>
       </nav>
@@ -37,7 +54,6 @@
       </div>
     </div>
   </header>
-
   <!-- Modal O Projeto -->
   <div id="projetoModal" class="modal">
     <div class="modal-content">

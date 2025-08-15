@@ -1,27 +1,15 @@
-const projetoBtn = document.getElementById('projetoBtn');
-const projetoModal = document.getElementById('projetoModal');
-const closeBtn = projetoModal.querySelector('.close');
+  document.addEventListener('DOMContentLoaded', () => {
+    const dropdown = document.querySelector('.dropdown');
+    const dropdownContent = document.querySelector('.dropdown-content');
 
-// Abrir modal no clique
-projetoBtn.addEventListener('click', (e) => {
-  e.preventDefault();
-  projetoModal.style.display = 'flex';
-});
+    dropdown.addEventListener('click', () => {
+      dropdownContent.classList.toggle('active');
+    });
 
-// Abrir modal no hover (apenas desktop)
-projetoBtn.addEventListener('mouseenter', () => {
-  if(window.innerWidth > 768){
-    projetoModal.style.display = 'flex';
-  }
-});
-
-// Fechar modal
-closeBtn.addEventListener('click', () => {
-  projetoModal.style.display = 'none';
-});
-
-window.addEventListener('click', (e) => {
-  if(e.target === projetoModal){
-    projetoModal.style.display = 'none';
-  }
-});
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!dropdown.contains(event.target)) {
+        dropdownContent.classList.remove('active');
+      }
+    });
+  });
