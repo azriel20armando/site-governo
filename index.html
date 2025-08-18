@@ -3,19 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Programa de Adesão – SADC & UA | MINDICOM</title>
+  <title>Programa de Adesão - SADC & UA | MINDICOM</title>
   <meta name="description" content="Website corporativo do Programa de Adesão de Angola às Zonas de Comércio Livre da SADC e da União Africana. Contexto, Objectivos, Estratégia, Plano de Acção, Webinários, Equipa e Indicadores." />
   <meta name="color-scheme" content="light dark" />
   <link rel="stylesheet" href="css/geral.css">
+  <link rel="stylesheet" href="css/dropdown.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Crimson+Text:wght@600;700&display=swap" rel="stylesheet">
-  <style>
-    
-  </style>
 </head>
 <body>
-  
     <header>
     <div class="container nav">
       <a href="#home" class="brand">
@@ -25,7 +22,21 @@
       <nav aria-label="Navegação principal">
         <ul id="navMenu">
           <li><a href="#home" class="active">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
+          <!-- Dropdown: Sobre o Projeto -->
+          <li class="dropdown-sobre" id="menuSobre">
+            <a href="#sobre" id="btnSobre">Sobre o projecto ▾</a>
+            <ul class="dropdown-content-sobre">
+              <li><a href="#publicos">Públicos-Alvo</a></li>
+              <li><a href="#estrategia">Estratégia</a></li>
+              <li><a href="#canais">Canais</a></li>
+              <li><a href="#plano">Plano de Acção</a></li>
+              <li><a href="#noticias">Notícias</a></li>
+              <li><a href="#webinarios">Webinários</a></li>
+              <li><a href="#equipa">Equipa</a></li>
+              <li><a href="#recursos">Recursos</a></li>
+              <li><a href="#indicadores">Indicadores</a></li>
+            </ul>
+          </li>
           <!-- Link que abre modal -->
           <li class="dropdown">
             <a href="#projeto" id="projetoBtn">O Projeto ▾</a>
@@ -44,6 +55,7 @@
               <li><a href="#desenvolvimento">Desenvolvimento regional</a></li>
             </ul>
           </li>
+
           <li><a href="#contactos">Contactos</a></li>
         </ul>
       </nav>
@@ -54,24 +66,6 @@
       </div>
     </div>
   </header>
-  <!-- Modal O Projeto -->
-  <div id="projetoModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Sobre o projecto</h2>
-      <div class="modal-links">
-        <a href="#publicos">Públicos-Alvo</a>
-        <a href="#estrategia">Estratégia</a>
-        <a href="#canais">Canais</a>
-        <a href="#plano">Plano de Acção</a>
-        <a href="#noticias">Notícias</a>
-        <a href="#webinarios">Webinários</a>
-        <a href="#equipa">Equipa</a>
-        <a href="#recursos">Recursos</a>
-        <a href="#indicadores">Indicadores</a>
-      </div>
-    </div>
-  </div>
 
   <main id="home" class="hero">
     <div class="container grid">
